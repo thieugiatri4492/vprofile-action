@@ -8,6 +8,7 @@ spec:
   source: 
     chart: vprofilecharts
     repoURL: https://github.com/thieugiatri4492/vprofile-action.git
+    path: helm/vprofilecharts
     targetRevision: HEAD
     helm:
       releaseName: vprofile-stack
