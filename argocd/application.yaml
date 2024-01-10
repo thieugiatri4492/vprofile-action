@@ -9,7 +9,6 @@ spec:
     chart: vprofilecharts
     repoURL: https://github.com/thieugiatri4492/vprofile-action.git
     targetRevision: HEAD
-    path: helm/vprofilecharts
     helm:
       releaseName: vprofile-stack
   destination:
