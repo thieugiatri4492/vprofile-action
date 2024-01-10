@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vproapp
-        image: {{ .Values.appimage}}:{{ .Values.apptag}}
+        image: 019008927040.dkr.ecr.us-east-2.amazonaws.com/vprofileapp:latest,12
         ports:
         - name: vproapp-port
           containerPort: 8080
