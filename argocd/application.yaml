@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vproapp-argocd
+  namespace: argocd
+spec:
+  project: default
+  source: 
+    chart: vprofilecharts
+    repoURL: https://github.com/thieugiatri4492/vprofile-action.git
+    targetRevision: HEAD
+    path: helm/vprofilecharts
+    helm:
+      releaseName: vprofile-stack
+  destination:
+    server: https://kubernetes.default.svc
+  
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+
+
+
+
