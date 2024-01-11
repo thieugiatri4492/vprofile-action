@@ -12,9 +12,11 @@ spec:
     targetRevision: HEAD
     helm:
       releaseName: vprofile-stack
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
-  
+    namespace: dev
   syncPolicy:
     automated:
       selfHeal: true
