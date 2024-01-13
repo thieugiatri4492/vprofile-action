@@ -10,6 +10,7 @@ spec:
     path: helm/vprofilecharts
     targetRevision: HEAD
     helm:
+      releaseName: vprofile-stack
       valueFiles:
         - values.yaml
   destination:
