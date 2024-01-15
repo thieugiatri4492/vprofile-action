@@ -1,0 +1,2 @@
+argocd/external-dns/godaddy-secret.yaml
+argocd/external-dns/argument-goddady-externaldnshelmchart.yaml
