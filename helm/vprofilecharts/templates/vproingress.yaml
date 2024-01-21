@@ -20,8 +20,8 @@ spec:
           service:
             name: my-app
             port:
-              #name: https
-              number: 8080
+              name: https
+              #number: 8080
   tls:
   - hosts:
     - vprofile.tripqm.online
