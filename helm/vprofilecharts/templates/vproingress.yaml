@@ -3,7 +3,11 @@ kind: Ingress
 metadata:
   name: vpro-ingress
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    external-dns.alpha.kubernetes.io/hostname: tripqm.online
+    external-dns.alpha.kubernetes.io/ttl: "120" #optional
 spec:
   ingressClassName: nginx
   rules:
