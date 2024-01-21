@@ -21,3 +21,7 @@ spec:
             name: my-app
             port:
               number: 8080
+  tls:
+  - hosts:
+    - vprofile.tripqm.online
+    secretName: argocd-server-tls
