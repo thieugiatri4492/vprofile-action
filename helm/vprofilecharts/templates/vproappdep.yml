@@ -17,9 +17,11 @@ spec:
       containers:
       - name: vproapp
         image: 019008927040.dkr.ecr.us-east-2.amazonaws.com/vprofileapp
+        tag: latest
         ports:
         - name: vproapp-port
           containerPort: 8080
+          imagePullPolicy: Always
       # imagePullSecrets:
       # - name: pullsecret:argocd/regcred
       initContainers:
