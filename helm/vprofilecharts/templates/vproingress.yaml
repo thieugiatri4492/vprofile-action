@@ -8,8 +8,8 @@ metadata:
     #  nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: "nginx"
-    #  external-dns.alpha.kubernetes.io/hostname: tripqm.online
-    #  external-dns.alpha.kubernetes.io/ttl: "120" #optional
+    external-dns.alpha.kubernetes.io/hostname: tripqm.online
+    external-dns.alpha.kubernetes.io/ttl: "120" #optional
 spec:
   ingressClassName: nginx
   rules:
