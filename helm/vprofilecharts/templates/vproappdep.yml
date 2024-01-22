@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: vproapp
-        image: vprofile/vprofileapp
+        image: 019008927040.dkr.ecr.us-east-2.amazonaws.com/vprofileapp
         ports:
         - name: vproapp-port
           containerPort: 8080
-      imagePullSecrets:
-      - name: pullsecret:argocd/regcred
+      # imagePullSecrets:
+      # - name: pullsecret:argocd/regcred
       initContainers:
       - name: init-mydb
         image: busybox
