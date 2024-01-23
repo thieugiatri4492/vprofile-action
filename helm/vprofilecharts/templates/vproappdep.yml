@@ -21,6 +21,8 @@ spec:
         ports:
         - name: vproapp-port
           containerPort: 8080
+      imagePullSecrets:
+          - name: regcred
        #imagePullSecrets:
        #- name: pullsecret:dev/regcred
       initContainers:
