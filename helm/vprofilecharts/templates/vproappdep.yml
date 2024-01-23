@@ -21,8 +21,8 @@ spec:
         - name: vproapp-port
           containerPort: 8080
           imagePullPolicy: Always
-       imagePullSecrets:
-       - name: pullsecret:dev/regcred
+       #imagePullSecrets:
+       #- name: pullsecret:dev/regcred
       initContainers:
       - name: init-mydb
         image: busybox
